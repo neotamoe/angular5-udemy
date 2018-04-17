@@ -17,9 +17,9 @@
         truffaut, hexagon umami brooklyn ethical blog pickled artisan.
       </p>
 
-      <p *ngFor="let log of buttonClickLog"
-         [ngStyle]="{backgroundColor: buttonClickLog.indexOf(log) >=5 ? 'blue' : 'white'}"
-         [ngClass]="{fifthColor: buttonClickLog.indexOf(log) >= 5}">
+      <p *ngFor="let log of buttonClickLog; let i = index"
+         [ngStyle]="{backgroundColor: i >=5 ? 'blue' : 'white'}"
+         [ngClass]="{fifthColor: i >= 5}">
         {{log}}</p>
     </div>
   </div>
