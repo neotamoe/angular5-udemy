@@ -1,0 +1,9 @@
+<div
+  class="panel panel-default">
+  <!--<div class="panel-heading">{{ element.name }}</div>-->
+  <div class="panel-heading" #heading>{{ name }}</div>
+  <div class="panel-body">
+    <!-- without this, angular won't render/project any content between component tags -->
+    <ng-content></ng-content>
+  </div>
+</div>
